@@ -1,7 +1,168 @@
+/*
+Base Styles
+====================================================*/
+
 * {
   box-sizing: border-box;
 }
 
-h1 {
-  background-color: blue;
+html {
+  font-size: 15px;
 }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+ /* text-transform: uppercase;*/
+  letter-spacing: .02em;
+  text-align: center;
+  color: #44545E;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: 5em;
+  width: 4em;
+}
+
+/*Typography (margins, letter spacing, font size for document)
+===========================================================================*/
+h1 {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #7B98AA;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  color: #44545E;
+}
+
+/* Lists
+===========================================================================*/
+
+ul a {
+  text-transform: none;
+ }
+
+li {
+  display: block;
+  text-align: left;
+}
+
+
+/* Layout
+===========================================================================*/
+section {
+
+}
+
+.introduction {
+  background-color: grey;
+}
+
+.about {
+  background-color: pink;
+}
+
+.projects {
+background-color: lightgrey;
+}
+
+.testimonials {
+background-color: lightblue;
+}
+
+.contact {
+background-color: pink;
+}
+
+wrappers {
+
+}
+
+cols {
+
+}
+
+/* header
+===========================================================================*/
+
+header {
+
+}
+
+.navbar-expand{-sm|-md|-lg|-xl}
+
+nav {
+  position: fixed;
+ }
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+.hamburger {
+
+}
+
+/* Buttons
+===========================================================================*/
+
+.button {
+
+}
+
+.button:hover {
+
+}
+
+/* Forms
+===========================================================================*/
+
+form {
+
+}
+
+form button {
+
+}
+
+textarea {
+
+}
+
+/* Footer
+===========================================================================*/
+
+footer {
+
+}
+
+footer li {
+  display: inline;
+}
+
+.socialLinks {
+
+}
+
+/* @MediaQuries
+===========================================================================*/
+
+@media only screen and (max-width: 790px) {
+}
+
+@media only screen and (max-width: 560px) {
+  }
+
