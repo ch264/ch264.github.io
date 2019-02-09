@@ -3,46 +3,56 @@
 
 $(document).ready(function (){
 
-// function testimonial() {
+  //https://stackoverflow.com/questions/12065273/fade-in-out-text-loop-jquery
+  function nextQuote() {
 
-//   let  $testimonialsWrapper = $('#testimonials');
-//   let $testimonials = $('#testimonials').find(".blockquote");
+    var quotes = $('blockquote');
+    var quoteIndex = -1;
 
-//   if (!testimonials.length) {
-//     return;
-//   }
+    function showNextQuote() {
+        ++quoteIndex;
+        quotes.eq(quoteIndex % quotes.length).fadeIn(2000).delay(2000).fadeOut(2000, showNextQuote);
+    }
+    showNextQuote();
+}
+nextQuote();
 
-//   // keep move first quote in dom to the end to make continous
-//   var nextTestimonial = function () {
-//     var testimonials = testimonialsWrapper.find('blockquote:first').detach().appendTo(testimonialsWrapper);
-//   setTimeout(nextTestimonial, testimonials.data('timeout'));
-//   };
+console.log('blockquote');
 
-//   setTimeout(nextTestimonial, testimonials.filter(':first').data("timeout"));
-// }
 
-// function () {
-//   testimonial();
-// }
+// $(document).on('scroll', function() {
+//     if($(this).scrollTop()>= $('#theTarget').position().top){
+//         yourActionHere();
+//     }
+// })
+$(window).scroll(function(){
+  console.log("scrolling");
 
-$("#testimonials").fadeToggle( 3000 );
-console.log()
+  if($(this).scrollTop() >= $('#form').position().top) {
+    $('.form').css('text-decoration', 'underline');
+      if ($(this).scrollTop() <= $('#form').position().top) {
+      $('.form').css('text-decoration', 'none');
+      }
+    }
+})
 
-// arr testimonial [{
-//   name: "Harald",
-//   quote: "Christina is amazing",
-// },
-// {
-//   name: "Susi",
-//   quote: "Christina codes"
-// }];
+
+  // ($(this).scrollTop() >= $('#projects').position().top) {
+  //   $('.projects').css('text-decoration', 'underline');
+  // } else if ($(this).scrollTop() >= $('#testimonials').position().top) {
+  //   $('.testimonials').css('text-decoration', 'underline');
+  // } else if ($(this).scrollTop() >= $('#form').position().top) {
+  //   $('.form').css('text-decoration', 'underline');
+//   // }
+// })
+
 
 
 })
 
 
 
-
+// Pseudocode for Image Carousel
 // active image1 is displayed (on top of other images that are hidden)
   // set Timer
   // if timer ends
@@ -69,55 +79,15 @@ console.log()
   //hide lightbox
   //decrease image size
 
-
-
-// var imagesIndex = 0;
-// showImages();
-
-// function showImages() {
-//   var i;
-//   var images = document.getElementsByClassName('.image-slide');
-//   var circle = document.getElementsByClassName('.circle');
-
-//   for (i = 0; i < images.length; i++) {
-//   images[i].style.display = 'none';
-//   }
-
-//   imagesIndex++;
-
-//   if (imagesIndex > images.length) {
-//     imagesIndex = 1
-//   }
-
-//   for (i = 0; i < circle.length; i++) {
-//     circle[i].className = circle[i].className.replace(" active", "");
-//   }
-
-//   images[imagesIndex-1].style.diplay = 'block';
-//   circle[imagesIndex-1].className += ' active';
-//   setTimeout(showImages, 2000);
-// }
-
-// showImages();
-
-
-// $(document).ready(function(){
-//   $('.carousel').carousel({
-//     interval: 2000
-//   })
-//   $('#myCarousel').on('slid.bs.carousel', function (e) {
-//   $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
-// })
-
-// $('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
-// $('#myCarousel').carousel('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
-// });
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({
+      alwaysShowClose: true,
+    });
+});
 
 
 
-
-
-// $(document).ready(function(){
 
 // testimonials rotate in and out on a timer
  // active Testimonial is displayed
@@ -131,20 +101,9 @@ console.log()
 // store time in variable and no need to recall function because it is an interval that will loop forever
 // window.setInterval(nextQuote, 1000);
 
-// nextQuote();
-// function nextQuote() {
-//   while ($('.blockquote').hasClass('active')) {
-//     $('.blockquote').show();
-//     $(this).removeClass('.active');
-//      $('.blockquote').hide();
-//     console.log("if");
-  // } else {
-  // $('.blockquote').addClass('active');
-  // $('.blockquote').hide();
-  // console.log("else");
-  // }};
 
-  // console.log('hi');
+
+
 
 // https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page
   // nav bar
@@ -158,15 +117,4 @@ console.log()
 
 // });
 
-// var $myModal = $('#myModal').modal({show: true});
 
-
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox({
-      alwaysShowClose: true,
-    });
-});
-
-
-// shopping cart solution code for quotes

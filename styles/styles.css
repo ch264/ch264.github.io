@@ -65,6 +65,8 @@ li {
 }
 
 
+
+
 /* Layout
 ===========================================================================*/
 section {
@@ -81,7 +83,7 @@ section {
   padding: 4em 0em;
 }
 
-./*about-wrapper h3 {
+/*about-wrapper h3 {
   padding-bottom: 1em;
 
 }*/
@@ -125,13 +127,13 @@ header {
   z-index: 100;
 }*/
 
-/*nav ul {
-  position: fixed;
+.navbar {
+ /* position: fixed;*/
   background: white;
   width: 100%;
   z-index: 4;
 
- }*/
+ }
 
 nav li {
   display: inline-block;
@@ -143,13 +145,11 @@ nav a {
   text-transform: uppercase;
 
 }
-
+/*
 nav .active {
   background-color: #4f81bd;
-}
-.hamburger {
+}*/
 
-}
 
 /* Carousel
 ===========================================================================*/
@@ -192,6 +192,19 @@ span {
 span:hover {
   background-color: yellow;
 }
+
+/* Testimonials
+===========================================================================*/
+
+/*#testimonials li{
+  display:none;
+}
+#testimonials ul{
+  list-style:none;*/
+
+  blockquote {
+    display: none;
+  }
 
 /* Buttons
 ===========================================================================*/
