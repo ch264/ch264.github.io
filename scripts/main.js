@@ -1,5 +1,14 @@
 
 // setTimer runs indefinetly
+// testimonials rotate in and out on a timer
+ // active Testimonial is displayed
+
+ // start timer
+ // when timer === 0
+ // fade out displayed Testimonal
+ // fade in second Testimonial
+ // start timer
+
 
 $(document).ready(function (){
 
@@ -20,35 +29,43 @@ nextQuote();
 console.log('blockquote');
 
 
-// $(document).on('scroll', function() {
-//     if($(this).scrollTop()>= $('#theTarget').position().top){
-//         yourActionHere();
-//     }
-// })
+//https://stackoverflow.com/questions/14161132/jquery-scroll-change-navigation-active-class-as-the-page-is-scrolling-relative
 $(window).scroll(function(){
   console.log("scrolling");
 
-  if($(this).scrollTop() >= $('#form').position().top) {
-    $('.form').css('text-decoration', 'underline');
-      if ($(this).scrollTop() <= $('#form').position().top) {
-      $('.form').css('text-decoration', 'none');
-      }
+  let scroll = $(this).scrollTop();
+
+  if (scroll >= $('.about').position().top && scroll <= $('#projects').position().top) {
+    $('.about').css('text-decoration', 'underline');
+  } else {
+        // Setting the value of a style property to an empty string removes that property from an element if it has already been directly applied,
+      $('.about').css('text-decoration', '');
     }
-})
 
+    if (scroll >= $('#projects').position().top && scroll <= $('#testimonials').position().top) {
+      $('.project').css('text-decoration', 'underline');
+    } else {
+        // Setting the value of a style property to an empty string — e.g. $('#mydiv').css('color', '') — removes that property from an element if it has already been directly applied,
+        $('.project').css('text-decoration', '');
+      }
 
-  // ($(this).scrollTop() >= $('#projects').position().top) {
-  //   $('.projects').css('text-decoration', 'underline');
-  // } else if ($(this).scrollTop() >= $('#testimonials').position().top) {
-  //   $('.testimonials').css('text-decoration', 'underline');
-  // } else if ($(this).scrollTop() >= $('#form').position().top) {
-  //   $('.form').css('text-decoration', 'underline');
-//   // }
-// })
+    if (scroll >= $('#testimonials').position().top && scroll <= $('#form').position().top) {
+      $('.quote').css('text-decoration', 'underline');
+    } else {
+        // Setting the value of a style property to an empty string — e.g. $('#mydiv').css('color', '') — removes that property from an element if it has already been directly applied,
+        $('.quote').css('text-decoration', '');
+      }
 
+    if (scroll >= $('#form').position().top) {
+      $('.form').css('text-decoration', 'underline');
+    } else {
+        // Setting the value of a style property to an empty string — e.g. $('#mydiv').css('color', '') — removes that property from an element if it has already been directly applied,
+      $('.form').css('text-decoration', '');
+      }
 
+});
 
-})
+});
 
 
 
@@ -84,37 +101,10 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox({
       alwaysShowClose: true,
     });
+
+
 });
 
 
-
-
-// testimonials rotate in and out on a timer
- // active Testimonial is displayed
-
- // start timer
- // when timer === 0
- // fade out displayed Testimonal
- // fade in second Testimonial
- // start timer
-
-// store time in variable and no need to recall function because it is an interval that will loop forever
-// window.setInterval(nextQuote, 1000);
-
-
-
-
-
-// https://stackoverflow.com/questions/26819675/navbar-highlight-for-current-page
-  // nav bar
-  // $(function(){
-  //       $('a').each(function(){
-  //           if ($(this).prop('href') == window.location.href) {
-  //               $(this).addClass('active'); $(this).parents('li').addClass('active');
-  //           }
-  //       });
-  //   });
-
-// });
 
 
