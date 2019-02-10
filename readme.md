@@ -33,4 +33,46 @@ if/else statement and I do not like that.
  https://www.taniarascia.com/parallax-scroll-effect/
 
 
+Pseudocode for Image Carousel:
+
+
+// active image1 is displayed (on top of other images that are hidden)
+  // set Timer
+  // if timer ends
+// image 1 slides to left and behind the stack
+// image 2 fully displayed
+  //set timer
+  // if timer ends
+// repeat image3
+
+// button1 below hightlight when image1 is in view
+// same for other buttons
+
+// add Event delegation to listen to click on each button
+  // if user clicks on button1, display image1
+  // if user clicks on button2, dispay image2
+  // if user clicks on button3 display image3
+
+// add Event delegation to listen to click on image
+  // enlarge image
+  // display image in lightbox
+    // (display github link?)
+
+// if user clicks on window
+  //hide lightbox
+  //decrease image size
+
+
+Pseudocode for flashing testimonials:
+
+// setTimer runs indefinetly
+// testimonials rotate in and out on a timer
+ // active Testimonial is displayed
+
+ // start timer
+ // when timer === 0
+ // fade out displayed Testimonal
+ // fade in second Testimonial
+ // start timer
+
 

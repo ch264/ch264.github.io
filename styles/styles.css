@@ -64,13 +64,7 @@ label {
   margin-bottom: 0.3em;
 }
 
-img {
-  transition: smooth;
-}
 
-img:hover {
-  opacity: 0.5;
-}
 
 /* Lists
 ===========================================================================*/
@@ -101,12 +95,12 @@ section {
   padding: 4em 0em;
 }
 
-.projects {
-background-color: lightgrey;
+#projects {
+  color: #F1F1ED;
 }
 
-.testimonials {
-background-color: lightblue;
+#testimonials {
+ color: #F1F1ED;
 }
 
 .contact {
@@ -162,6 +156,17 @@ nav a {
   padding-bottom: 4em;
 }
 
+.profilePic img {
+  transition: 0.3s ease;
+  background: white;
+  opacity: 0.5;
+}
+
+.profilePic img:hover {
+  opacity: 1.0;
+  transform: scale(1.2, 1.2);
+}
+
 /* Carousel
 ===========================================================================*/
 
@@ -170,7 +175,7 @@ nav a {
 }
 
 .carousel-indicators {
-  background-color: black;
+  background-color: #1A2225;
   margin: 0em;
 }
 
@@ -268,8 +273,55 @@ i {
 ===========================================================================*/
 
 @media only screen and (max-width: 790px) {
-}
 
-@media only screen and (max-width: 560px) {
+  h1, h2 {
+    transition: smooth;
+    font-size: 30px;
+
   }
+
+
+
+
+@media only screen and (max-width: 570px) {
+
+  header {
+    background-attachment: scroll;
+  }
+
+  header  {
+
+  }
+
+  .title h1 {
+  position: absolute;
+  font-size: 3.8em;
+  top: -4em;
+  left: -2.5em;
+
+   }
+
+   .title h2 {
+    position: absolute;
+    top: 13em;
+    left: -7em;
+   }
+
+  #introduction {
+    padding: 3em;
+  }
+
+  #projects {
+    padding-top: 3em;
+  }
+
+  #testimonials {
+     padding: 2em 4em;
+     margin-top: 3em;
+  }
+
+  #form {
+    padding-top: 1em;
+  }
+}
 
