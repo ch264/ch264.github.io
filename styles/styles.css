@@ -107,14 +107,6 @@ section {
 background-color: pink;
 }
 
-wrappers {
-
-}
-
-cols {
-
-}
-
 /* header
 ===========================================================================*/
 
@@ -148,9 +140,6 @@ nav li {
   padding: .5em;
 }
 
-nav a {
-  /*text-transform: uppercase*/;
-}
 
 .profilePic {
   padding-bottom: 4em;
@@ -177,15 +166,8 @@ nav a {
 .carousel-indicators {
   background-color: #1A2225;
   margin: 0em;
+  z-index: -1;
 }
-
-/*.carousel-control-prev-icon {
- background-color: black;
-}*/
-
-/*.carousel-control-next-icon {
-  background-color: black;
-}*/
 
 span {
   height: 1em;
@@ -199,6 +181,16 @@ span {
 span:hover {
   background-color: #F1F1ED;
 }
+
+
+/* skills
+===========================================================================*/
+#skills {
+  color: white;
+  font-size: 3em;
+  padding-top: 3em;
+}
+
 
 /* Testimonials
 ===========================================================================*/

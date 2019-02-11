@@ -27,11 +27,18 @@ $(document).ready(function (){
         $('.about').css('text-decoration', '');
       }
 
-    if (scroll >= $('#projects').position().top && scroll <= $('#testimonials').position().top) {
+    if (scroll >= $('#projects').position().top && scroll <= $('#skills').position().top) {
       $('.project').css('text-decoration', 'underline');
     } else {
         // Setting the value of a style property to an empty string — e.g. $('#mydiv').css('color', '') — removes that property from an element if it has already been directly applied,
         $('.project').css('text-decoration', '');
+      }
+
+    if (scroll >= $('#skills').position().top && scroll <= $('#testimonials').position().top) {
+      $('.skills').css('text-decoration', 'underline');
+    } else {
+        // Setting the value of a style property to an empty string — e.g. $('#mydiv').css('color', '') — removes that property from an element if it has already been directly applied,
+        $('.skills').css('text-decoration', '');
       }
 
     if (scroll >= $('#testimonials').position().top && scroll <= $('#form').position().top) {

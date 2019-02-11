@@ -26,11 +26,15 @@ challenges:
 - using jQuery to animate the nav bar items to the according sections on the page.
 - finding a balance with all the script tags and CDNs that can were included
 
+
 unfinished:
 - the nav bar item animation jQuery could be solved better. I would like to write a function to make this part more scalable as now the sections are hard coded into each
 if/else statement and I do not like that.
  - I tried to include a parallax effect on the background image: like this: https://mdbootstrap.com/previews/docs/latest/html/parallax/index.html
  https://www.taniarascia.com/parallax-scroll-effect/
+
+- I have to add screenshots into the readme file,
+- I have copied the urls above the code that inspired me
 
 
 Pseudocode for Image Carousel:
