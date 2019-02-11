@@ -1,4 +1,6 @@
 
+URL to my site: https://ch264.github.io/
+
 My approach:
 To make the website I used HTML, CSS, jQuery and Bootstrap.
 I first wireframed the website and then worked my way from top to bottom through my mapped out sections. Once the skeleton with HTML and CSS was done, I started with the animations with jQuery and bootstrap.
@@ -25,6 +27,7 @@ challenges:
 - applying the lightbox to the library with bootstrap lightbox
 - using jQuery to animate the nav bar items to the according sections on the page.
 - finding a balance with all the script tags and CDNs that can were included
+- background image in header should be opacity 0.5 but then H1 and H2 also change opacity
 
 
 unfinished:
@@ -35,6 +38,12 @@ if/else statement and I do not like that.
 
 - I have to add screenshots into the readme file,
 - I have copied the urls above the code that inspired me
+- The H1 and H2 should fly in from both sides
+- nav a links uppercase
+- add in webkits for cross browser compatibility
+- add github link to social links
+- change fonts
+- add an API
 
 
 Pseudocode for Image Carousel:

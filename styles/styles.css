@@ -278,6 +278,7 @@ i {
 @media only screen and (max-width: 570px) {
 
   header {
+    /*avoid parallax in mobile view*/
     background-attachment: scroll;
   }
 
