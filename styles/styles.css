@@ -34,6 +34,16 @@ img {
   display: inherit;
 }
 
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
+
 /*Typography (margins, letter spacing, font size for document)
 ===========================================================================*/
 h1 {
