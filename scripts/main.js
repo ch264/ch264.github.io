@@ -63,6 +63,11 @@ $(document).ready(function (){
     $(this).ekkoLightbox({
       alwaysShowClose: true,
     });
+
+
+    // owl carousel 
+    $(".owl-carousel").owlCarousel();
+
   });
 
  

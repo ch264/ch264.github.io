@@ -6,6 +6,12 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   <!-- @Font-Face -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+
   <!-- link Bootstrap -->
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -27,7 +33,7 @@
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light style="background-color: #e3f2fd;">
-      <a class="navbar-brand" href="#">CvH</a>
+      <a class="navbar-brand" href="#">C.V.H</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,17 +42,17 @@
           <li class="nav-item active about" ><a href="#introduction">About<span class="sr-only">(current)</span></a></li>
           <li class="nav-item project"><a href="#projects">Projects</a></li>
           <li class="nav-item skills"><a href="#skills">Skills</a></li>
-          <li class="nav-item quote"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item quote"><a href="#testimonials">Quotes</a></li>
           <li class="nav-item form"><a href="#form">Contact</a></li>
         </ul>
     </nav>
 <!-- <div class="row">
     <div class="col-md-12 title text-left"> -->
     <div class="title text-left">
-        <h1>Christina V. Hastenrath</h1>
+        <h1 class="fade-in one">Christina V. Hastenrath</h1>
       <!-- </div> -->
     <!--   <div class="col-md-12"> -->
-        <h2>Junior Web developer</h2>
+        <h2 class="fade-in two">Junior Web developer</h2>
     <!--   </div> -->
     <!-- </div>
     </div> -->
@@ -62,13 +68,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <p>I am a Full-Stack Web Developer with a craving for knowledge and continuous drive to learn. 
-                My professional aspirations are fueled by sheer grit and that accomplished feeling I get when I tackle any challenges that dare to come my way. 
-                Moving from Germany to the UK, Australia, the Netherlands and now San Francisco, I learned early on that sacrifice, hard work, and dedication is the key to achieving greatness. 
-                Now, my adaptability allows me to persevere through the challenges of being a developer.</p>
+              <p>I am a former Cell and Molecular Biologist, DNA expert and Customer Success Manager turned Full Stack Developer. With a continuous drive to learn and craving for knowledge, I have a passion for products that provide meaningful value to the company and end-users. 
+                My professional aspirations are fueled by sheer grit and that accomplished feeling I get when I tackle any challenges that dare to come my way. Moving from Germany to the UK, Australia, the Netherlands and now San Francisco, I learned early on that sacrifice, hard work, and dedication is the key to achieving greatness. 
+                </p>
             </div>
             <div class="col-md-6">
-              <p>I am known for being a practical and creative problem-solver with a logical, data-driven mindset,  
+              <p>
+                  Now, my adaptability allows me to persevere through the challenges of being a developer.I am known for being a practical and creative problem-solver with a logical, data-driven mindset,  
                 I am an experienced account manager and project leader with a focus on elevating operational excellence and fostering best team practices. I have a Wide range of experience across laboratory, manufacturing and corporate environments.</p>
             </div>
           </div>
@@ -76,26 +82,35 @@
       </div>
     </section>
 
-    <section id="projects">
-        <h3>Projects</h3>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- <section id="projects"> -->
+        <!-- <h3>Projects</h3> -->
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active"> -->
+              <!-- <div class="carousel-item" id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                <div class='lightbox-content'>
+                  <a data-toggle="lightbox" href="images/racer.png">
+                    <a href="https://emmameets.herokuapp.com/" target="_blank">
+                      <img class="w-80" src="images/emmalanding.png" alt="EmmaMeets landing"></a>
+                </div>
+              </div>
+            <div class="carousel-item" id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
               <div class="lightbox-content">
-                <a href="images/Screenshot 2019-02-22 at 11.54.03.png" data-toggle="lightbox"> <!-- class="modal-backdrop" -->
-                  <img src="images/Screenshot 2019-02-22 at 11.54.03.png" alt="picture of Kibblr login page"class="img-fluid">
+                  <a href="http://kibblr.herokuapp.com/" target="_blank">
+                  <a href="images/Screenshot 2019-02-22 at 11.54.03.png" data-toggle="lightbox"></a> -->
+                  <!-- <img src="images/Screenshot 2019-02-22 at 11.54.03.png" alt="Kibblr login" class="img-fluid">
                 </a>
               </div>
-            </div>
-            <div class="carousel-item" id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+            </div> -->
+            <!-- <div class="carousel-item" id="demoLightbox" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
               <div class='lightbox-content'>
                 <a data-toggle="lightbox" href="images/Wayfarer_Listing.png">
-                  <img class="w-80"  src="images/Wayfarer_Listing.png" alt="Picture of Wayfarer listing project">
+                  <a href="https://fathomless-crag-64869.herokuapp.com/listings/" target="_blank"><img class="w-80"  src="images/Wayfarer_Listing.png" alt="Picture of Wayfarer listing project"></a>
                 </a>
               </div>
             </div>
@@ -116,7 +131,81 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+    </section> -->
+
+    <section id="projects">
+        <h3>Projects</h3>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="https://emmameets.herokuapp.com/" target="_blank"><img class="d-block w-100" src="images/emmalanding.png" alt="EmmaMeets landing page"></a>
+          </div>
+          <div class="carousel-item">
+              <a href="https://project-hangry.herokuapp.com/" target="_blank"><img class="d-block w-100" src="images/Hangry.png" alt="Hangry landing page"></a>
+          </div>
+          <div class="carousel-item">
+              <a href="http://kibblr.herokuapp.com/" target="_blank"><img class="d-block w-100" src="images/Screenshot 2019-02-22 at 11.54.03.png" alt="Kibblr Login Page"></a>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </section>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm" id="card">
+              <div class="card h-100" style="width: 18rem;">
+                <div class="card-header">EmmaMeets</div>
+                <img class="card-img-top" src="images/emmalanding.png" alt="EmmaMeets landing page">
+                <div class="card-body">
+                  <p class="card-text">A social media platform for dogs to creteate profile and dog-related products. Users can rate and leave reviews and save dog-related products to favorites</p>
+                  <a href="https://github.com/ch264/emma_meets" class="btn btn-outline-secondary">GitHub</a>
+                  <a href="https://emmameets.herokuapp.com/" class="btn btn-outline-secondary">Website</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm" id="card">
+              <div class="card h-100" style="width: 18rem;">
+              <div class="card-header">Hangry</div>
+              <img class="card-img-top" src="images/Hangry.png" alt="Hangry landing page">
+              <div class="card-body">
+                <p class="card-text">Users to create and save recipes. Users must register or login to view, create, and save recipes. They have the ability to edit their profile information, edit and delete their created recipes. They can also remove a recipe from their saved collection. </p>
+                <a href="https://github.com/ch264/hangry" class="btn btn-outline-secondary">GitHub</a>
+                <a href="https://project-hangry.herokuapp.com/" class="btn btn-outline-secondary">Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" id="card">
+              <div class="card h-100" style="width: 18rem;">
+              <div class="card-header">Kibblr</div>
+              <img class="card-img-top" src="images/Screenshot 2019-02-22 at 11.54.03.png" alt="Kibblr login page">
+              <div class="card-body">
+                <p class="card-text">Kibblr is a social media platform for users to create their own profiles and can view, edit and delete reviews for dog-friendly restaurants in the database.</p>
+                <a href="https://github.com/brandonmcastillo/Project01" class="btn btn-outline-secondary">GitHub</a>
+                <a href="http://kibblr.herokuapp.com/" class="btn btn-outline-secondary">Website</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm" id="card">
+            <div class="card h-100" style="width: 18rem;">
+            <div class="card-header">Wayfarer</div>
+            <img class="card-img-top" src="images/Wayfarer_Listing.png" alt="Wayfarer listing page">
+            <div class="card-body">
+              <p class="card-text">Wayfarer is a web app for users to sign up and create a profile page. After login, users can leave reviews to cities that they have been to.</p>
+              <a href="https://github.com/WalrusMaximus/Project2-Wayfarer-Backend" class="btn btn-outline-secondary">GitHub</a>
+              <a href="https://fathomless-crag-64869.herokuapp.com/listings/" class="btn btn-outline-secondary">Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section id="skills">
       <div class="row">
@@ -134,80 +223,63 @@
         <div class="col-md-4"><i class="fab fa-python"></i></div>
         <div class="col-md-4"><i class="fab fa-github"></i></div>
       </div>
+      <div class="row">
+        <div class="col-md-4"><i class="fas fa-database"></i></div>
+        <div class="col-md-4"><i class="fab fa-jira"></i></div>
+        <div class="col-md-4"><i class="fab fa-react"></i></div>
+      </div>
     </section>
+
+    <section class="charts"></section>
 
     <section id="testimonials">
        <!-- Rotate testimonials -->
-      <h3>Testimonials</h3>
+      <h3>Quotes</h3>
       <blockquote class="blockquote text-center block1">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p class="mb-0">"Your time is limited, so don't waste it living someone else's life." </p>
+        <footer class="blockquote-footer"><cite title="Source Title">Steve Jobs</cite></footer>
       </blockquote>
       <blockquote class="blockquote text-center">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p class="mb-0">"I didn’t get there by wishing for it or hoping for it, but by working for it."</p>
+        <footer class="blockquote-footer"><cite title="Source Title">Estée Lauder</cite></footer>
       </blockquote>
       <blockquote class="blockquote text-center">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        <p class="mb-0">"Action is the foundational key to all success."</p>
+        <footer class="blockquote-footer"><cite title="Source Title">Pablo Picasso</cite></footer>
       </blockquote>
-
     </section>
-
-    <section id="form">
-      <form>
-        <h3>Contact me</h3>
-         <div class="form-group has-warning">
-          <label class="d-flex left">Full Name</label>
-          <input class="form-control" type="text" placeholder="Full Name">
-        </div>
-        <div>
-          <label class="d-flex left">Email Address</label>
-          <input class="form-control" type="email" placeholder="Email Address">
-        </div>
-        <div>
-          <label class="d-flex left">Phone Number</label>
-          <input class="form-control" type="text" placeholder="Phone Number">
-        </div>
-        <div>
-          <label class="d-flex left">Message</label>
-          <textarea class="form-control" name="#" placeholder="Message"></textarea>
-        </div>
-        <div>
-          <button class="d-flex left" type="submit">Send</button>
-        </div>
-      </form>
-    </section>
-
     <section id="form">
       <form method="POST" action="https://formspree.io/christinavhastenrath@gmail.com">
         <h3>Contact me</h3>
         <div class="form-group has-warning">
           <label class="d-flex left">Full Name</label>
-          <input class="form-control" type="text" placeholder="Full Name">
+          <input class="form-control" type="text" placeholder=" Your Full Name">
         </div>
         <div>
           <label class="d-flex left">Email Address</label>
-          <input class="form-control" type="email" name="email" placeholder="Your email">
+          <input class="form-control" type="email" name="email" placeholder="Your Email">
         </div>
         <div>
           <label class="d-flex left">Message</label>
-          <textarea class="form-control" name="message" placeholder="Test Message"></textarea>
+          <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
         </div>
-        <button class="d-flex left" type="submit">Send Test</button>
+        <button class="d-flex left" type="submit">Send</button>
       </form>
     </section>
-
   </main>
   <footer>
     <div class="socialMediaLinks">
-      <a href="https://www.facebook.com/Christinahasti"><i class="fab fa-facebook-messenger"></i></a>
-      <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/christinahastenrath/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/ch264"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/etTinchen"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/christinahastenrath"><i class="fab fa-linkedin"></i></a>
       <a href="https://christinahastenrath.wordpress.com/2013/08/01/lost-in-iceland/"><i class="fab fa-wordpress-simple"></i></a>
   </div>
   </footer>
 
+  <!-- owl carousel -->
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- my script -->
   <script src="scripts/main.js"></script>
   </body>
 </html>
