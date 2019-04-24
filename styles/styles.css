@@ -93,30 +93,6 @@ li {
   text-align: center;
 }
 
-.col-md {
-  transition: 0.3s ease;
-  background-color: #1A2226;
-  border: #02f19f solid 2px;
-  padding-top: 1.2em;
-  padding-bottom: 0.3em;
-  margin: 0.3em;
-  border-radius: 1%;
-}
-
-.col-md:hover {
-  border: #02f19f solid 4px;
-  background-color: #1A2226;
-  /* color:#1A2327;
-  padding-top: 1.2em;
-  padding-bottom: 0.3em;
-  margin: 0.3em; */
-  transform: scale(1.2, 1.2);
-  z-index: 2;
-}
-
-/* .col-md:hover h2 {
-  color: #1A2327;
-} */
 
 
 /* Layout
@@ -268,6 +244,7 @@ span:hover {
 ===========================================================================*/
 #card {
   padding-top: 3em;
+  width: 35rem;
 }
 
 h1.card-header {
@@ -286,12 +263,17 @@ p.card-text {
   border-radius: 3px;
 }
 
-div.col-sm{
+/* div.col-sm{
   padding: 0em;
-}
+} */
 
 .techstack {
   margin: 0em 4em;
+  color: #1A2226
+}
+
+.col-xs {
+  margin: 0.2em;
 }
 
 
@@ -307,6 +289,24 @@ div.col-sm{
 #skills h2 {
   font-size: 1.5em;
 }
+
+.col-md {
+  transition: 0.3s ease;
+  background-color: #1A2226;
+  border: #02f19f solid 2px;
+  padding-top: 1.2em;
+  padding-bottom: 0.3em;
+  margin: 0.3em;
+  border-radius: 1%;
+}
+
+.col-md:hover {
+  border: #02f19f solid 4px;
+  background-color: #1A2226;
+  transform: scale(1.2, 1.2);
+  z-index: 2;
+}
+
 
 
 /* Testimonials
@@ -353,6 +353,10 @@ form input{
   background-color: #F1F1ED;
 }
 
+form h3 {
+  padding-bottom: 0.5em;
+}
+
 ::placeholder {
   font-size: 0.8em;
 }
@@ -387,9 +391,7 @@ i {
   h1, h2 {
     transition: smooth;
     font-size: 30px;
-
   }
-
 
 
 
@@ -399,45 +401,39 @@ i {
     /*avoid parallax in mobile view*/
     background-attachment: scroll;
   }
-
-  header  {
-
-  }
-
   .title h1 {
   position: absolute;
-  font-size: 3.8em;
-  top: -4em;
-  left: -2.5em;
-}
+  font-size: 3em;
+  top: -0.5em;
+  }
 
   .title h2 {
     position: absolute;
-    top: 13em;
-    left: -7em;
-}
+    font-size: 2em;
+    top: 11em;
+    left: -2.5em;
+  }
+
+  h3 {
+    padding-bottom: 0.5em;
+  }
+
+  .profilePic img {
+    opacity: 1;
+  }
+  .col-lg-6 {
+    color: white;
+  }
 
   #introduction {
     padding: 3em;
   }
 
-  #projects {
-    padding-top: 3em;
-
-  }
-
-  section #projects{
-    background-color: #F5F5F5;
-  }
-
-
-  #testimonials {
-    padding: 2em 4em;
-    margin-top: 3em;
-  }
-
   #form {
     padding-top: 1em;
+  }
+  #form h3 {
+    font-size: 3em;
   }
 }
 
